@@ -141,6 +141,32 @@ p{
   background-color: var(--first-color);
 }
 
+@media screen and (min-width:1024px) {
+  .menu-btn {
+    display: none;
+  }
+
+  .menu {
+    position: static;
+    width: auto;
+    flex-direction: row;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .menu a {
+    padding: 0 1rem;
+  }
+
+  .menu a:last-child {
+    padding-right: 0;
+  }
+
+  .menu a:hover {
+    background-color: transparent;
+  }
+}
+
 /* Utilities */
 
 box-shadow-1 {
@@ -181,4 +207,17 @@ box-shadow-1 {
   font-weight: bold;
   font-size: 2rem;
   text-decoration: none;
+}
+
+@media screen and (min-width:768px) {
+  .header {
+    position: sticky;
+    top: 0;
+    padding: 0.5rem;
+    height: calc(var(--header-height) - .5rem);
+  }
+}
+
+@media screen and (min-width:1024px) {
+  
 }
