@@ -1,4 +1,4 @@
-/* 1:16:14 Maquetado móvil  menu */
+/* 2:04:00 Maquetado móvil  menu */
 
 /* Custom Properties */
 :root {
@@ -94,6 +94,30 @@ p{
 
 /* Components */
 
+/* HeroImage */
+.hero-image {
+  background-image: var(--hero-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  background-attachment: var(--hero-attachment);
+}
+
+.hero-image-title {
+  font-size: 7.5vw;
+  color: var(--hero-text-color);
+}
+
+.hero-image-opacity {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--hero-opacity-color);
+}
+
 /* Menu */
 
 .menu-btn {
@@ -171,6 +195,18 @@ p{
 
 box-shadow-1 {
   box-shadow: .25rem .25rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+.btn {
+  border-radius: .5rem;
+  padding: 1rem;
+  display: inline-block;
+  width: 200px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: var(--white-color);
+  background-color: var(--first-color);
 }
 
 .container {
