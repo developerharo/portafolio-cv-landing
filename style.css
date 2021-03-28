@@ -1,4 +1,4 @@
-/* 2:17:00 Maquetado móvil  menu */
+/* 2:42:00 Maquetado móvil  menu */
 
 /* Custom Properties */
 :root {
@@ -246,12 +246,55 @@ box-shadow-1 {
   max-width: var(--max-width);
 }
 
+.gray-scale {
+  filter:grayscale(1);
+}
+
 .none {
   display: none;
 }
 
+.section {
+  padding: 2rem 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+@media screen and (min-width: 1024px) {  
+  .full-lg-screen {
+    width: 100%;
+    min-height: 100vh;
+  }
+
+
+  .text-lg-center {
+    text-align: center;
+  }
+
+  .text-lg-left {
+    text-align: left;
+  }
+
+  .text-lg-right {
+    text-align: right;
+  }
+}
 
 /* Site Styles */
+.about > article {  
+  margin-bottom: 2rem;
+}
+
 .header {
   position: fixed;
   left: 0;
@@ -280,6 +323,13 @@ box-shadow-1 {
 }
 
 @media screen and (min-width:1024px) {
+  .about {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: space-between;
+    align-content: center;    
+  }
+  
   .header {
     position: sticky;
     top: 0;
