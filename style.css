@@ -1,4 +1,4 @@
-/* 4:15:00 Maquetado móvil  menu */
+/* 4:27:00 Maquetado móvil  menu */
 
 /* Custom Properties */
 :root {
@@ -100,7 +100,17 @@ p{
   padding: 2rem 0;
   max-width: 800px;
   text-align: center;
+  overflow-x: hidden;
   background-color: var(--carousel-bg-color);
+}
+
+.carousel .slides {
+  padding-left: 0;
+  /* 100% por cada slide */
+  width: 400%;
+  display: flex;
+  list-style: none;
+  transition: transform .5s ease-in-out;
 }
 
 .carousel input {
@@ -115,6 +125,29 @@ p{
   display: inline-block;
   width: .75rem;
   height: .75rem;
+}
+
+#slide-1:checked ~ .slides {
+  transform: translateX(0%);
+}
+
+#slide-2:checked ~ .slides {
+  transform: translateX(-25%);
+}
+
+#slide-3:checked ~ .slides {
+  transform: translateX(-50%);
+}
+
+#slide-4:checked ~ .slides {
+  transform: translateX(-75%);
+}
+
+#slide-1:checked ~ .slides-nav label#dot-1,
+#slide-2:checked ~ .slides-nav label#dot-2,
+#slide-3:checked ~ .slides-nav label#dot-3,
+#slide-4:checked ~ .slides-nav label#dot-4 {
+  background-color: var(--gray-dark-color);
 }
 
 /* HeroImage */
