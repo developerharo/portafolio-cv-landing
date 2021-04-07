@@ -1,4 +1,4 @@
-/* 4:27:00 Maquetado móvil  menu */
+/* 4:51:00 Maquetado móvil  menu */
 
 /* Custom Properties */
 :root {
@@ -346,7 +346,7 @@ progress::-moz-progress-bar {
   background-color: var(--gray-light-color);
 }
 
-box-shadow-1 {
+.box-shadow-1 {
   box-shadow: .25rem .25rem 1rem rgba(0, 0, 0, 0.25);
 }
 
